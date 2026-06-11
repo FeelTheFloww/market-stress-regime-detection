@@ -12,7 +12,7 @@ The goal is not necessarily to predict exact crashes, but to **detect transition
 
 ---
 
-# Dataset
+## Dataset
 
 The dataset is constructed using historical daily data for the **SPY ETF**, downloaded via the `yfinance` API.
 
@@ -22,7 +22,7 @@ The dataset includes approximately **13 years of daily observations**.
 
 ---
 
-# Feature Engineering
+## Feature Engineering
 
 Several statistical and technical indicators are constructed from historical price data in order to capture the dynamics of market behavior.
 
@@ -42,7 +42,7 @@ These features aim to capture patterns associated with:
 
 ---
 
-# Stress Event Definition
+## Stress Event Definition
 
 Market stress events are defined using a rule-based approach based on **large negative returns over short horizons**.
 
@@ -57,7 +57,7 @@ Although simplified, this definition captures periods of significant market turb
 
 ---
 
-# Baseline Model
+## Baseline Model
 
 Before training machine learning models, a simple **volatility-based baseline** is implemented.
 
@@ -67,7 +67,7 @@ This provides a reference point to evaluate whether machine learning models prov
 
 ---
 
-# Machine Learning Models
+## Machine Learning Models
 
 Two classification models are trained:
 
@@ -87,7 +87,7 @@ Models are evaluated using standard classification metrics:
 
 ---
 
-# Walk-Forward Validation
+## Walk-Forward Validation
 
 Because financial time-series are inherently temporal, standard random cross-validation would introduce **look-ahead bias**.
 
@@ -97,7 +97,7 @@ This methodology more closely resembles real-world trading conditions.
 
 ---
 
-# Model Calibration
+## Model Calibration
 
 Predicted probabilities are calibrated to ensure that model outputs correspond to meaningful probabilities.
 
@@ -105,7 +105,7 @@ Calibration curves are used to compare predicted probabilities with observed fre
 
 ---
 
-# Results
+## Results
 
 The results show that machine learning models are able to identify periods of elevated market stress.
 
@@ -121,7 +121,7 @@ This behavior reflects the well-known phenomenon of **volatility clustering** in
 
 ---
 
-# Visualization
+## Visualization
 
 Several visualizations are produced to analyze the modelâ€™s behavior:
 
@@ -134,7 +134,7 @@ These plots help interpret how the model reacts to changing market conditions.
 
 ---
 
-# Key Insights
+## Key Insights
 
 The model captures important characteristics of financial markets:
 
@@ -150,7 +150,7 @@ While predicting crashes remains extremely difficult, detecting transitions into
 
 ---
 
-# Project Structure
+## Project Structure
 
 
 market-stress-regime-detection
@@ -177,7 +177,7 @@ market-stress-regime-detection
 
 ---
 
-# Limitations
+## Limitations
 
 Financial markets are noisy and difficult to predict.
 
@@ -187,7 +187,7 @@ Possible improvements include incorporating additional sources of information an
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 Several directions could improve the predictive power of the model:
 
@@ -252,7 +252,7 @@ Backtesting such strategies would provide a practical evaluation of the signalâ€
 
 ---
 
-# Conclusion
+## Conclusion
 
 This project demonstrates how machine learning can be applied to financial time-series in order to detect periods of elevated market stress.
 
