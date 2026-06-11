@@ -1,5 +1,7 @@
 # Market Stress Regime Detection
 
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 ## Overview
 
 Financial markets experience periods of instability characterized by increased volatility, rapid drawdowns, and structural regime changes. Detecting these periods early is an important problem in quantitative finance, risk management, and portfolio allocation.
@@ -257,3 +259,17 @@ Backtesting such strategies would provide a practical evaluation of the signal�
 This project demonstrates how machine learning can be applied to financial time-series in order to detect periods of elevated market stress.
 
 Although precise prediction of crashes remains challenging, identifying high-risk regimes can provide valuable insights for quantitative risk management and trading strategies.
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Gradient boosting (XGBoost/LightGBM) and sequence models (LSTM) baselines
+- [ ] Comparison with unsupervised regime detection (HMM, Gaussian mixtures)
+- [ ] Feature importance and SHAP analysis
+- [ ] Multi-asset stress indicators (credit spreads, VIX term structure)
+- [ ] Live monitoring script with alert thresholds
+
+## License
+
+[MIT](LICENSE)
